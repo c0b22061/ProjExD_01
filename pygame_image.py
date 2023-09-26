@@ -9,7 +9,8 @@ def main():
     bg_img = pg.image.load("ex01/fig/pg_bg.jpg")
     tori_img = pg.image.load("ex01/fig/3.png")
     tori_img =pg.transform.flip(tori_img,True,False)
-    tori_img =pg.transform.rotozoom(tori_img,10,1.0)
+    tori_img1=pg.transform.rotozoom(tori_img,10,1.0)
+    tori_imgs = [tori_img,tori_img1]
     tmr = 0
     while True:
         for event in pg.event.get():
