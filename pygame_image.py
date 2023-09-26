@@ -17,7 +17,6 @@ def main():
         for event in pg.event.get():
             if event.type == pg.QUIT: return
         a=(tmr%2400)
-        print(a)
         b=tmr%200
         screen.blit(bg_img, [-a, 0])
         screen.blit(bg_img1, [1600-a, 0])
