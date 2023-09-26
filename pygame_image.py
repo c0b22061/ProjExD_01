@@ -16,10 +16,11 @@ def main():
     while True:
         for event in pg.event.get():
             if event.type == pg.QUIT: return
-        a=(tmr%2400)
+        a=(tmr%3200)
         b=tmr%200
         screen.blit(bg_img, [-a, 0])
         screen.blit(bg_img1, [1600-a, 0])
+        screen.blit(bg_img, [3200-a, 0])
         if b>100:
              screen.blit(tori_imgs[0],[300,200])
         else:
